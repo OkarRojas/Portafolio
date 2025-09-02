@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Okar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+      <img src="../images/logo.png" alt="logo" />
+
+      <div class="right">
+        <a href="" class="head">Home</a>
+        <a href="" class="head">Services</a>
+        <a href="" class="head">Pricing</a>
+
+        <button class="toggle">
+          <span class="material-icons">≡</span>
+        </button>
+      </div>
+
+      <div class="sub-menu">
+        <a href="" class="sub">Home</a>
+        <a href="" class="sub">Services</a>
+        <a href="" class="sub">Pricing</a>
+        <a href="" class="option">Shop</a>
+        <a href="" class="option">Events</a>
+        <a href="" class="option">Gallary</a>
+        <a href="" class="option">Settings</a>
+        <a href="" class="option">Logout</a>
+      </div>
+    </div>
+    <main>
+        <section>
+            <div style="display: flex; margin-top: 5%;">
+                <h1 class="nombre">Hola!! <br>Oscar Fabian<br>Rojas Baquero</h1>
+                <img src="src/perfil.jpg" width="300" alt="Foto de perfil" class="perfil-imagen"/>
+            </div>
+        </section>
+        <section>
+            <p class="prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero in repellendus ipsa porro magni pariatur et similique deserunt nesciunt, quas ducimus. Atque, exercitationem facilis deleniti iusto consequatur culpa animi.</p>
+        </section>
+        <script>
+            let subMenu = document.querySelector(".sub-menu");
+
+            window.addEventListener("click", (e) => {
+                if (e.target.closest(".toggle")) {
+                subMenu.style.display = "flex";
+                } else {
+                subMenu.style.display = "none";
+                }
+            });
+        </script>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
