@@ -38,7 +38,7 @@
     <main>
         <section>
             <div style="display: flex; margin-top: 5%;">
-                <h1 class="nombre">Hola!! <span class="io">Yo soy</span><br>Oscar Fabian<br>Rojas Baquero</h1>
+                <h1 class="nombre">Hola!! <span class="io">Yo soy</span><br>Óscar Fabián<br>Rojas Baquero</h1>
                 <img src="src/perfil.jpg" width="300" alt="Foto de perfil" class="perfil-imagen"/>
             </div>
         </section>
@@ -48,6 +48,7 @@
             <img src="src/img2.jpeg" alt="Descripción de la imagen" class="imagen-descripcion">
         </div>
         <h3 class="proyectos-titulo">Estos son algunos de mis <br>Proyectos</h3>
+        <p style="color: #f5f5dcc7; margin-left: 5%;">(Dando click a la imagen te dirige al repositorio en github)</p>
         <div class="proyectos">
             <img src="src/img2.jpeg" alt="xd" id="img2">   
             <div id="texto-scroll" style="overflow-y:auto">
@@ -85,17 +86,31 @@
             
         </div>
 
-    <section>
-        <h2>Contacto</h2>
-        <form action="https://formsubmit.co/oscarfabianrojas76@gmail.com" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <button type="submit">Send</button>
+    <section class="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <form action="https://formsubmit.co/oscarfabianrojas76@gmail.com" method="POST", class="form">
+            <div style="margin-left: 30%;">
+            <p>Nombre</p>
+                <input type="text" name="name" required>
+                <p>email</p>
+                <input type="e-mail" name="email" required>
+                <button type="submit">Send</button>
+            </div>
+            <div style="margin-left: 30%; margin-top: -3%;">
+                <p>Descripción</p>
+                <input type="text" name="description" style="width: 300px; height: 200px;">
+                
+            </div>
+          
         </form>
 
     </section>
 
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Óscar Fabián Rojas Baquero. Todos los derechos reservados.</p>
+    </footer>
 
 
     <script src="main.js"></script>

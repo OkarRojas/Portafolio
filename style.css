@@ -1,18 +1,42 @@
 /* --- Estilos generales --- */
 :root {
-    --primary-color:#458C85;
-    --secondary-color: #0A5951;
-    --accent-color:#3BBFA7;
-    --navbar-bg:#070D0B;
-    --font-main:#012611;
-    --font-alt: 'Poppins', sans-serif;
+    --color-claro1 :#003840;
+    --color-claro2 :#005A5B;
+    --color-claro3 :#007369;
+    --color-claro4 :#008C72;
+    --color-claro5 :#02A676;
+
+    --color-oscuro1 :#001F1F;
+    --color-oscuro2 :#004953;
+    --color-oscuro3 :#004D4D;
+    --color-oscuro4 :#006666;
+    --color-oscuro5 :#007F7F;
+
+    --color-letras : #FFFFFF;
 }
 
 body {
     font-family: 'Noto Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8C7158;
+    background-color:var(--color-oscuro1);
+}
+.nombre {
+   animation-name: fadeInOut, moveLeft300px, bounce;
+    animation-duration: 2.5s, 5s, 1s;
+    animation-iteration-count: 2, 1, 5;
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 13%;
+    width: 100%;
+  }
 }
 
 .nombre {
@@ -24,7 +48,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 .nombre span {
-    color:#A65C32;
+    color:#007369;
     font-size: .7em;
 }
 
@@ -32,8 +56,9 @@ body {
 .perfil-imagen {
     width: 300px;
     height: auto;
-    margin-left: 10%;
+    margin-left: 60%;
     margin-top: 8%;
+    position: absolute;
 }
 
 .nav-links li a {
@@ -85,7 +110,7 @@ body {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     margin: 0 20px;
 }
 
@@ -158,7 +183,7 @@ body {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #444;
+        background-color: var(--color-oscuro2);
         text-align: center;
         transition: all 0.3s ease-in-out;
     }
@@ -201,7 +226,7 @@ body {
 }
 
 .navbar.scrolled {
-  background: #A67C58; /* más transparente */
+  background: var(--color-oscuro2); /* más transparente */
 }
 .navbar ul {
   margin: 0; padding: 0; list-style: none;
@@ -216,7 +241,7 @@ body {
 }
 
 .navbar.scrolled a{
-    color: black;
+    color: white;
 }
 
 .des{
@@ -225,9 +250,11 @@ body {
     font-size: 1.2em;
     width: 100%;
     margin-top: 10%;
-    height: 400px;
-    background: var(--font-main);
+    height: 500px;
+    color: var(--color-letras);
     display: inline-flex;
+    background-color: rgb(48, 6, 6);
+
 }
 
 .des p{
@@ -248,6 +275,7 @@ body {
     font-size: 3em;
     margin-top: 6%;
     margin-left: 5%;
+    color: var(--color-letras);
 }
 
 .proyectos{
@@ -267,7 +295,8 @@ body {
     width: 700px;
     height: 400px;
     padding-left: 10%;
-    border-color: #012611;
+    
+    color: var(--color-letras);
 }
 
 #texto-scroll::-webkit-scrollbar {
@@ -282,3 +311,60 @@ body {
 #texto-scroll::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.8);
 }
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    padding-left: 10%;
+    font-size: 1.1em;
+}
+
+.contact{
+    color: var(--color-letras);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-title{
+    color: var(--color-letras);
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 56px;
+    margin-bottom: 5%;
+}
+form{
+    display: inline-flex;
+}
+form p{
+
+    color: var(--color-letras);
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+form input{
+    padding-left: 15%;
+    margin-left: 25%;
+    width: 200px;
+}
+
+form button{
+    margin-left: 20%;
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15%;
+    font-size: 20px;
+}
+
